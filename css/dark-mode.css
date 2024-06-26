@@ -1,0 +1,85 @@
+/* Header */
+
+.dark-mode header {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+.dark-mode .header-list li a {
+    color: #fff;
+}
+
+.dark-mode .header-list li a:hover {
+    color: #31ff98;
+}
+
+.dark-mode .container {
+    background-color: black;
+}
+
+.dark-mode .slideRadio .PLight {
+    display: flex;
+}
+
+.dark-mode .PDark {
+    opacity: 0;
+    display: none;
+}
+
+.dark-mode header {
+    color: white;
+}
+
+/* To-Do container */
+
+.dark-mode h1.toDoList {
+    color: #e3e3e3;
+}
+
+.dark-mode .pendingTasks {
+    color: rgb(163, 163, 163);
+}
+
+.dark-mode .taskList {
+    color: #e3e3e3;
+}
+
+.dark-mode .logout {
+    background-color: #000;
+    color: white;
+}
+
+/* Login bang */
+
+.dark-mode div.loginForm {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode div.loginButton {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode div.continueWithoutLogin {
+    background-color: #ececec;
+}
+
+.dark-mode .dontHaveAccount {
+    color: rgb(0, 204, 255);
+}
+
+/* Register bang */
+
+.dark-mode div.registerForm {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode div.registerButton {
+    background-color: white;
+    color: black;
+}
+
+.dark-mode .haveAccount {
+    color: rgb(0, 204, 255);
+}

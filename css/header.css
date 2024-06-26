@@ -1,0 +1,66 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px 10px;
+    z-index: 10;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-list {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-list li {
+    margin: 0 10px;
+}
+
+.header-list li a {
+    color: #000;
+}
+  
+  header nav .ZeeCoder h3 {
+    font-size: 25px;
+    margin: 0;
+    color: #00ff62;
+    cursor: pointer;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.4s;
+  }
+  
+  header nav ul li a:hover {
+    color: #0bcccc;
+  }
+  
+  .slideRadio {
+    margin-top: -22px;
+    margin-left: auto;
+    margin-right: 100px;
+  }
+  

@@ -1,0 +1,168 @@
+* {
+    font-family: "Poppins";
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+}
+
+#scrollToTopBtn img {
+  border-radius: 50%;
+  /* filter: brightness(10000000); */
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  display: flex;
+  bottom: 20px;
+  right: 20px;
+  font-size: 16px;
+  background-color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  z-index: 1;
+  border: 2px solid black;
+}
+
+#scrollToTopBtn img:hover {
+  border-radius: 10px;
+  box-shadow: 0 0 5px 3px black;
+  /* border: none; */
+}
+
+.container {
+  max-width: 600px;
+  margin: 200px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all .3s;
+}
+
+.container h1.toDoList {
+  text-align: center;
+  color: #333;
+}
+
+#newtask {
+  margin-top: 20px;
+  display: flex;
+}
+
+#inputBox {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#push {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#push:hover {
+  background-color: #45a049;
+}
+
+.tasks {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.bxs-trash {
+  position: absolute;
+  /* top: 50%; */
+  right: 10px;
+  padding: 5px;
+  transform: translateY(-50%);
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: scale(1.4);
+  transition: .2s ease;
+}
+
+.bxs-trash:hover {
+  background-color: #ff6967;
+  translate: 0 -2px;
+}
+
+.pendingTasks {
+  margin-top: 20px;
+  color: #666;
+}
+
+.tasksCount {
+    color: red;
+}
+
+.deleteAll {
+    background-color: #f44336;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.deleteAll:hover {
+    animation: shake .3s ease-in-out;
+    background-color: red;
+}
+
+@keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(5px);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    75% {
+      transform: translateX(5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.checkbox {
+    position: absolute;
+    margin: 2px 0 0 520px;
+}
+
+.inputField::placeholder {
+  color: red;
+}
+
+.headerText {
+  cursor: text;
+}
+
+.taskList {
+  color: #333;
+  font-size:30px;
+  margin: 10px 0 -10px 0;
+}

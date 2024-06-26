@@ -1,0 +1,11 @@
+@media only screen and (max-width: 500px) {
+    div.loginForm {
+        /* max-width: 200px; */
+        min-width: auto;
+    }
+
+    #inputBox {
+        width: 10px;
+        min-width: auto;
+    }
+}

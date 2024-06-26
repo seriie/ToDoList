@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" id="goToTop">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/dark-mode.css">
+  <link rel="stylesheet" href="css/myAlert.css">
+  <link rel="stylesheet" href="css/myAlertLogin.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/notification.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="Icon" href="https://www.pngall.com/wp-content/uploads/5/Checklist-Logo-PNG.png">
+  <title>My Todo List | Zee</title>
+</head>
+<center>
+  <div class="confirms">
+    <div class="confirm">
+      <div class="confirm-msg">Are You Sure!?</div>
+      <button id="yes">Yes</button>
+      <button id="no">No</button>
+    </div>
+  </div>
+</center>
+<header>
+  <nav>
+    <div class="ZeeCoder">
+      <h3 onclick="refresh();">ToDoList</h3>
+    </div>
+    <ul class="header-list">
+      <li><a class="headerText Level" href="#Level">Level : </a></li>
+      <li><a class="headerText Point" href="#Point">Point : 0</a></li>
+    </ul>
+    <div class="slideRadio">
+      <label class="switch" title="Toggle themes">
+        <input type="checkbox" id="theme-toggle" onclick="toggleTheme()">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+</header>
+<center>
+  <div class="notification">
+    <div class="notifBox">
+        <div class="notifText">
+            <p class="notifTxt"></p>
+        </div>
+        <div class="notifButton">
+            <div class="okNotifBtn">Ok</div>
+        </div>
+    </div>
+</center>
+</div>
+<body class="body">
+  <div class="centerRegister">
+    <div class="registerForm">
+      <h1 class="registerText">Regsiter</h1>
+      <div class="inputRegister">
+        <input type="text" class="inputTextRegister" placeholder="Username">
+        <input type="password" class="inputPasswordRegister" placeholder="Password">
+        <div class="registerButton">Register</div>
+        <div>Already have an account? <a class="haveAccount">Login</a></div>
+      </div>
+    </div>
+  </div>
+  <div class="centerLogin">
+    <div class="loginForm">
+      <h1 class="loginText">Login</h1>
+      <div class="inputLogin">
+        <input type="text" class="inputTextLogin" placeholder="Username">
+        <input type="password" class="inputPasswordLogin" placeholder="Password">
+        <div class="loginButton">Login</div>
+        <h3>OR</h3>
+        <div class="continueWithoutLogin">Continue Without Login</div>
+        <div>Don't have an account? <a class="dontHaveAccount">Register</a></div>
+      </div>
+    </div>
+  </div>
+  <center>
+    <div class="alertContainer">
+      <div class="alert">
+        <div class="main-alerts">
+          <i class="bx bx-error"></i>
+          <span class="alert-msg">error</span>
+        </div>
+      </div>
+    </div>
+  </center>
+  <center>
+    <div class="successAlerts">
+      <div class="main-successAlerts">
+        <i class="bxSuccess bx-errorSuccess"></i>
+        <span class="successAlert-msg">Success</span>
+      </div>
+    </div>
+  </center>
+  <div class="container">
+    <h1 class="toDoList">Your To-Do List</h1>
+    <div id="newtask">
+      <input type="text" placeholder="Enter task.." id="inputBox">
+      <button id="push">Add</button>
+    </div>
+    <div id="wrapping-tasks">
+
+      <h1 class="taskList">Task List</h1>
+      <hr>
+      <ul class="tasks"></ul>
+      <span class="pendingTasks">You have <span class="tasksCount">0</span> pending tasks</span>
+      <button class="deleteAll" onclick="deleteAllTasks();">Delete All</button>
+    </div>
+  </div>
+
+  
+  <div class="logout">
+    <div class="text" onclick="logout();">Logout</div>
+  </div>
+  <div class="goToTop" id="scrollToTopContainer">
+    <a onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><img src="https://seriie.github.io/Portofolio/images/Arrow.png" alt=""></a>
+  </div>
+  <script src="script/script.js"></script>
+  <script src="script/login.js"></script>
+  <script src="script/myAlerts.js"></script>
+  <script src="script/notification.js"></script>
+</body>
+</html>
