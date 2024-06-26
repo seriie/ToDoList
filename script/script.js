@@ -8,6 +8,12 @@ inputBox.addEventListener("keyup", function(event) {
     event.preventDefault();
     push.click();
   }
+
+  if(inputBox.value != 0) {
+    push.classList.add('active');
+  } else {
+    push.classList.remove('active');
+  }
 });
 
 push.addEventListener("click", function() {

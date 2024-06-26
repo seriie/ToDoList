@@ -60,16 +60,24 @@ body {
   border-radius: 4px;
 }
 
+#inputBox:focus {
+  outline: none;
+}
+
 #push {
   padding: 10px 20px;
-  background-color: #4caf50;
+  background-color: #a9d1aa;
   color: #fff;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
 }
 
-#push:hover {
+#push.active {
+  cursor: pointer;
+  background-color: #4caf50;
+}
+
+#push:hover.active{
   background-color: #45a049;
 }
 
